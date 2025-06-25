@@ -432,23 +432,14 @@ textarea {
 }
 /* Footer End */
 
-/* Responsive Styles Start*/
-@media (max-width: 768px) {
-  #navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px;
-  }
-
+/* Responsive Styles - Tablet*/
+@media (max-width: 1000px) {
   #navbar img {
-    margin-left: 0;
-    width: 60px;
+    margin-left: 20px;
   }
 
   #navbar ul {
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
+    margin-right: 20px;
   }
 
   #navbar ul li a {
@@ -457,85 +448,84 @@ textarea {
 
   header .content h1 {
     font-size: 28px;
-    text-align: center;
-  }
-
-  header .content p {
-    font-size: 14px;
-    text-align: center;
   }
 
   #About {
-    flex-direction: column;
+    
     height: auto;
-    padding: 20px;
-    text-align: center;
-  }
-
-  #About .About-content {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #About .About-content img {
-    width: 100%;
-    margin-bottom: 20px;
+    padding: 4rem 2rem;
+   
   }
 
   #About .About-content p {
-    margin: 0;
+    margin-right: 2rem;
   }
 
-  #Offers {
-    flex-direction: column;
-    height: auto;
-    padding: 20px;
-    text-align: center;
+  #About .About-content img {
+    width: 250px; 
   }
 
-  #Offers .Offers-Items {
-    flex-direction: column;
+  #Offers .Offers-Items img {
+    width: 150px;
+  }
+
+  #Offers .Offers-Items h3 {
+    font-size: 18px;
   }
 
   #Menu .Menu-Items {
-    flex-direction: column;
-  }
-
-  #Menu .Menu-Items .Menu-Item {
-    margin: 20px 0;
-  }
-
-  #Daytime .Daytime-Items {
-    flex-direction: column;
-    height: auto;
-    padding: 20px;
-  }
-
-  #Gallery .img-Gallery img {
-    width: 100%;
-    height: auto;
-    margin: 10px 0;
+    display: block;
   }
 
   #Contact .Contact-content {
     flex-direction: column;
-    gap: 30px;
   }
 
-  #Contact .Contact-content .Contact-info,
-  form {
-    width: 100%;
-  }
+  /* Responsive Styles - Mobile*/
 
-  h2 {
-    font-size: 28px;
-  }
+  @media (max-width: 600px) {
+    #navbar {
+        flex-direction: column;
+    }
 
-  p {
+    #navbar img {
+        margin-bottom: 20px;
+    }
+    header .content h1 {
+    font-size: 18px;
+  }
+  header .content p {
     font-size: 14px;
   }
+  #About .About-content {
+    flex-direction: column;
+  }
+  #About .About-content p {
+    margin-top: 2rem 0;
+  }
+  #About .About-content img {
+    margin: auto;
+  }
+  #Offers .Offers-Items {
+    flex-direction: column;
+    padding: 30px 10px;
+  }
+  #Offers {
+    height: auto;
+  }
+  #Menu .Menu-Items .Menu-Item {
+    margin: 20px 10px;
+  }
+  #Daytime .Daytime-Items {
+    display: flex;
+    height: auto;
+    padding: 30px 0;
+  }
+  #Daytime .Daytime-Items .Daytime-Items {
+    margin-top: 20px;
+  }
+  #Contact .Contact-content, Form {
+    width: 80%;
+  }
+  }
 }
-
-/* Responsive Styles End */
-
-
